@@ -63,7 +63,7 @@ prompt_git() {
 }
 
 cloud=""
-if grep -q "^flags.* hypervisor" /proc/cpuinfo ; then
+if grep -q "^flags.* hypervisor" /proc/cpuinfo 2>/dev/null; then
 	cloud="☁️ "
 fi
 
