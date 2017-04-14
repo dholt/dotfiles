@@ -38,6 +38,8 @@ alias la="ls -laF ${colorflag}"
 # shellcheck disable=SC2139
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
+alias lr="ls -althr ${colorflag}"
+
 # Always use color output for `ls`
 # shellcheck disable=SC2139
 alias ls="command ls ${colorflag}"
