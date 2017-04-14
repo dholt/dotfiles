@@ -1,7 +1,5 @@
 ## dotfiles
 
-[![Travis CI](https://travis-ci.org/jessfraz/dotfiles.svg?branch=master)](https://travis-ci.org/jessfraz/dotfiles)
-
 **To install:**
 
 ```console
