@@ -177,9 +177,9 @@
 	insteadOf = "gist:"
 
 [user]
-	name = Jess Frazelle
-	email = acidburn@google.com
-	signingkey = 0x18F3685C0022BFF3
+	name = Douglas Holt
+	email = doug.holt@gmail.com
+	signingkey = 0x0B4629195494FA14
 
 # Uncomment if you want fetch to also get all github pull requests, this is rather
 # large on big repos.
@@ -187,7 +187,7 @@
 	#fetch = +refs/pull/*/head:refs/remotes/origin/pull/*
 
 [github]
-	user = jessfraz
+	user = dholt
 
 [commit]
 	gpgsign = true
@@ -196,12 +196,13 @@
 	cookiefile = ~/.gitcookies
 
 [gpg]
-	program = gpg2
+	#program = gpg2
+	program = gpg
 
 [sendemail]
 	smtpEncryption = tls
 	smtpServer = smtp.gmail.com
-	smtpUser = me@jessfraz.com
+	smtpUser = mail@dholt.org
 	smtpServerPort = 587
 
 [credential]
