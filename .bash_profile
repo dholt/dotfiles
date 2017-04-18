@@ -36,4 +36,4 @@ done
 	tr ' ' '\n')" scp sftp ssh
 
 # print a fortune when the terminal opens
-fortune -a -s | lolcat
+type fortune &>/dev/null && fortune -a -s | lolcat
