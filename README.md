@@ -52,3 +52,20 @@ Example for adding new plugins:
 $ cd .vim/bundle && \
   git submodule add git://github.com/altercation/vim-colors-solarized.git
 ```
+
+#### Fonts
+
+Linux/Mac:
+
+```console
+$ git clone https://github.com/powerline/fonts.git
+$ cd fonts/
+$ ./install.sh
+```
+
+Mac:
+
+```console
+$ brew install fontforge
+```
+

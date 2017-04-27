@@ -51,3 +51,6 @@ autocmd BufReadPost *
 " Key Mappings
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" Powerline fonts
+let g:airline_powerline_fonts = 1
