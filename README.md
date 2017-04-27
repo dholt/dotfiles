@@ -1,5 +1,11 @@
 ## dotfiles
 
+**To checkout:**
+
+```console
+$ git clone --recursive https://github.com/dholt/dotfiles.git
+```
+
 **To install:**
 
 ```console
