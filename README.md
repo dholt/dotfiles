@@ -63,9 +63,5 @@ $ cd fonts/
 $ ./install.sh
 ```
 
-Mac:
-
-```console
-$ brew install fontforge
-```
+iTerm2: "Preferences->Profiles->Text->Non-ASCII font", choose a powerline font
 
