@@ -93,7 +93,7 @@ if ! shopt -oq posix; then
 fi
 for file in /etc/bash_completion.d/* ; do
 	# shellcheck source=/dev/null
-	source "$file"
+	source "$file" 2>/dev/null
 done
 
 if [[ -f "${HOME}/.bash_profile" ]]; then
