@@ -40,9 +40,15 @@ git config --global user.signingkey "$GPG_KEY_ID"
 
 #### `.vim`
 
+Update submodules:
+
+```console
+$ git submodule update --init
+```
+
 Example for adding new plugins:
 
-```bash
-cd .vim/bundle
-git submodule add git://github.com/altercation/vim-colors-solarized.git
+```console
+$ cd .vim/bundle && \
+  git submodule add git://github.com/altercation/vim-colors-solarized.git
 ```
