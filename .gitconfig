@@ -24,6 +24,9 @@
 	# Commit all changes
 	ca = !git add -A && git commit -av
 
+    # Commit with message
+    cm = commit -m
+
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
@@ -178,8 +181,8 @@
 
 [user]
 	name = Douglas Holt
-	email = doug.holt@gmail.com
-	signingkey = 0x0B4629195494FA14
+	email = dholt@nvidia.com
+	signingkey = A05CE556704DED8E
 
 # Uncomment if you want fetch to also get all github pull requests, this is rather
 # large on big repos.
