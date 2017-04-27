@@ -34,14 +34,9 @@ git config --global user.signingkey "$GPG_KEY_ID"
 
 #### `.vim`
 
-For my `.vimrc` and `.vim` dotfiles see
-[github.com/jessfraz/.vim](https://github.com/jessfraz/.vim).
+Example for adding new plugins:
 
-### Tests
-
-The tests use [shellcheck](https://github.com/koalaman/shellcheck). You don't
-need to install anything. They run in a container.
-
-```console
-$ make test
+```bash
+cd .vim/bundle
+git submodule add git://github.com/altercation/vim-colors-solarized.git
 ```
