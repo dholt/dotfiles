@@ -19,20 +19,17 @@ this:
 ###
 
 GIT_AUTHOR_NAME="Your Name"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="email@you.com"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
+GIT_AUTHOR_EMAIL="my@email.com"
 GH_USER="nickname"
-git config --global github.user "$GH_USER"
+GPG_KEY_ID="0x..."
 
-###
-### Gmail credentials for mutt
-###
-export GMAIL=email@you.com
-export GMAIL_NAME="Your Name"
-export GMAIL_FROM=from-email@you.com
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+
+git config --global user.name "$GIT_AUTHOR_NAME"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+git config --global github.user "$GH_USER"
+git config --global user.signingkey "$GPG_KEY_ID"
 ```
 
 #### `.vim`
