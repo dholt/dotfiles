@@ -302,6 +302,12 @@ http(){
 		--log-driver none \
 		${DOCKER_REPO_PREFIX}/httpie "$@"
 }
+iftop(){
+	docker run --rm -it \
+		--net host \
+		--name iftop \
+		dholt/iftop
+}
 imagemin(){
 	local image=$1
 	local extension="${image##*.}"
