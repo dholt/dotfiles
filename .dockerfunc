@@ -111,7 +111,7 @@ bees(){
 		${DOCKER_REPO_PREFIX}/beeswithmachineguns "$@"
 }
 bwm-ng() {
-    docker run --rm -ti --net=host dholt/bwm-ng
+    docker run --rm -ti --net=host --name bwm-ng dholt/bwm-ng
 }
 cadvisor(){
 	docker run -d \
