@@ -193,7 +193,7 @@
 	user = dholt
 
 [commit]
-	gpgsign = true
+	gpgsign = false
 
 [http]
 	cookiefile = ~/.gitcookies

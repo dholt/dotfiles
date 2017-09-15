@@ -113,6 +113,9 @@ bees(){
 bwm-ng() {
     docker run --rm -ti --net=host --name bwm-ng dholt/bwm-ng
 }
+iotop() {
+    docker run --rm -ti --privileged --net=host --pid=host alpine sh -c 'apk add --no-cache iotop ; iotop'
+}
 cadvisor(){
 	docker run -d \
 		--restart always \
