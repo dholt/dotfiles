@@ -20,6 +20,7 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set expandtab
+set modeline
 "set mouse=n
 "set textwidth=80    " enforce 80 character lines
 cab aspe :w<CR>:!aspell -e -c  %<CR>:e<CR><CR>
