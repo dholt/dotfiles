@@ -110,6 +110,12 @@ bees(){
 		--name bees \
 		${DOCKER_REPO_PREFIX}/beeswithmachineguns "$@"
 }
+bwm-ng() {
+    docker run --rm -ti --net=host --name bwm-ng dholt/bwm-ng
+}
+iotop() {
+    docker run --rm -ti --privileged --net=host --pid=host alpine sh -c 'apk add --no-cache iotop ; iotop'
+}
 cadvisor(){
 	docker run -d \
 		--restart always \
@@ -301,6 +307,12 @@ http(){
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		--log-driver none \
 		${DOCKER_REPO_PREFIX}/httpie "$@"
+}
+iftop(){
+	docker run --rm -it \
+		--net host \
+		--name iftop \
+		dholt/iftop
 }
 imagemin(){
 	local image=$1
