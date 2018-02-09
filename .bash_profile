@@ -35,5 +35,8 @@ done
 	grep -v "[?*]" | cut -d " " -f2 | \
 	tr ' ' '\n')" scp sftp ssh
 
+# Set up direnv: https://direnv.net/
+type direnv >/dev/null 2>&1 && eval "$(direnv hook bash)"
+
 # print a fortune when the terminal opens
 type fortune &>/dev/null && fortune -a -s | lolcat
