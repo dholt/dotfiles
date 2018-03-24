@@ -43,6 +43,8 @@ autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 " set smartindent
 " set autoindent
 
+autocmd Filetype yaml setlocal expandtab tabstop=2 shiftwidth=2 smartindent autoindent
+
 " Let VIM quit if multiple buffers are open
 autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
