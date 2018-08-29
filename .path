@@ -19,3 +19,5 @@ if [ -f "${HOME}/google-cloud-sdk/path.bash.inc" ]; then source "${HOME}/google-
 # The next line enables shell command completion for gcloud.
 # shellcheck source=/dev/null
 if [ -f "${HOME}/google-cloud-sdk/completion.bash.inc" ]; then source "${HOME}/google-cloud-sdk/completion.bash.inc"; fi
+
+export PATH=${PATH}:/home/nv/utils/container-tools/bin:/home/nv/utils/gcf-tools/bin
