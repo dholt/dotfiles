@@ -1,4 +1,5 @@
 #!/bin/bash
+#set -x
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -91,10 +92,10 @@ if ! shopt -oq posix; then
 		. /etc/bash_completion
 	fi
 fi
-for file in /etc/bash_completion.d/* ; do
-	# shellcheck source=/dev/null
-	source "$file" 2>/dev/null
-done
+#for file in /etc/bash_completion.d/* ; do
+	## shellcheck source=/dev/null
+	#source "$file" 2>/dev/null
+#done
 
 if [[ -f "${HOME}/.bash_profile" ]]; then
 	# shellcheck source=/dev/null
