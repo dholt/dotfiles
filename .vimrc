@@ -1,5 +1,5 @@
 :version 4.0
-execute pathogen#infect()
+" execute pathogen#infect()
 filetype plugin indent on
 
 " PASTE ISSUES:

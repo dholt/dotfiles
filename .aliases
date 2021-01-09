@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias vpn="~/git/work-vpn/vpn.sh"
+
 # debian specific aliases
 #alias open='xdg-open'
 #alias pbcopy='xclip -selection clipboard'
