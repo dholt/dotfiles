@@ -5,7 +5,7 @@
 function powerline_precmd() {
     #PS1="$(/usr/local/bin/powerline-go -error $? -shell zsh -colorize-hostname -condensed)"
     #PS1="$(/usr/local/bin/powerline-go -error $? -shell zsh -newline)"
-    PS1="$(/usr/local/bin/powerline-go -error $? -shell zsh)"
+    PS1="$(/opt/homebrew/bin/powerline-go -error $? -shell zsh)"
 }
 
 function install_powerline_precmd() {
